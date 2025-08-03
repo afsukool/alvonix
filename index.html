@@ -167,6 +167,15 @@ footer .social a:hover {
   .brand-logo:hover {
     filter: none;
   }
+  .logo-marquee {
+  animation: marquee 18s linear infinite;
+  /* Adjust duration based on how fast you want it */
+}
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* -50% if you double the images for loop */
+}
+
 </style>
 
 
@@ -320,16 +329,18 @@ footer .social a:hover {
 </section>
 <!-- End Services Section -->
 
-<section id="partners" class="brands py-8 bg-gray-50">
-  <h2 class="text-center text-xl font-semibold mb-6">Trusted Technologies We Use</h2>
-  <div class="flex justify-center items-center gap-6 flex-wrap">
-    <img src="img/aws.png" alt="AWS" class="max-h-9 w-auto object-contain">
-    <img src="img/microsoft.png" alt="Microsoft" class="max-h-9 w-auto object-contain">
-    <img src="img/cisco.png" alt="Cisco" class="max-h-9 w-auto object-contain">
+<section id="partners" class="py-3 bg-gray-50 border-b overflow-hidden">
+  <div class="relative">
+    <div class="logo-marquee flex items-center gap-8">
+      <img src="img/aws.webp" alt="AWS" class="max-h-10 w-auto object-contain flex-shrink-0" />
+      <img src="img/microsoft.webp" alt="Microsoft" class="max-h-10 w-auto object-contain flex-shrink-0" />
+      <img src="img/cisco.webp" alt="Cisco" class="max-h-10 w-auto object-contain flex-shrink-0" />
+      <!-- Repeat the logos below, so the loop looks seamless: -->
+      <img src="img/aws.webp" alt="AWS" class="max-h-10 w-auto object-contain flex-shrink-0" />
+      <img src="img/microsoft.webp" alt="Microsoft" class="max-h-10 w-auto object-contain flex-shrink-0" />
+      <img src="img/cisco.webp" alt="Cisco" class="max-h-10 w-auto object-contain flex-shrink-0" />
+    </div>
   </div>
-  <p class="text-center text-sm text-gray-500 mt-4">
-    All trademarks and logos are the property of their respective owners.
-  </p>
 </section>
 
 
