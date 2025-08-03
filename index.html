@@ -135,6 +135,29 @@
 footer .social a:hover {
   color: #00ffae;
 }
+.brand-logo {
+  height: 32px;    /* Smaller height, like a navbar logo! */
+  width: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+.brand-logo:hover {
+  filter: none;
+}
+
+/* Optional continuous scroll effect (marquee) */
+.logo-marquee {
+  animation: marquee 20s linear infinite;
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+}
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
   </style>
   <!-- tsParticles CDN -->
@@ -329,19 +352,19 @@ footer .social a:hover {
 </section>
 <!-- End Services Section -->
 
-<section id="partners" class="py-3 bg-gray-50 border-b overflow-hidden">
-  <div class="relative">
-    <div class="logo-marquee flex items-center gap-8">
-      <img src="img/aws.png" alt="AWS" class="max-h-10 w-auto object-contain flex-shrink-0" />
-      <img src="img/microsoft.png" alt="Microsoft" class="max-h-10 w-auto object-contain flex-shrink-0" />
-      <img src="img/cisco.png" alt="Cisco" class="max-h-10 w-auto object-contain flex-shrink-0" />
-      <!-- Repeat the logos below, so the loop looks seamless: -->
-      <img src="img/aws.webp" alt="AWS" class="max-h-10 w-auto object-contain flex-shrink-0" />
-      <img src="img/microsoft.webp" alt="Microsoft" class="max-h-10 w-auto object-contain flex-shrink-0" />
-      <img src="img/cisco.webp" alt="Cisco" class="max-h-10 w-auto object-contain flex-shrink-0" />
+<section id="partners" class="py-3 bg-gray-50 border-bottom overflow-hidden">
+  <div class="container">
+    <div class="logo-marquee d-flex align-items-center gap-4">
+      <img src="img/aws.png" alt="AWS" class="brand-logo" />
+      <img src="img/microsoft.png" alt="Microsoft" class="brand-logo" />
+      <img src="img/cisco.png" alt="Cisco" class="brand-logo" />
+      <img src="img/aws.png" alt="AWS" class="brand-logo" />
+      <img src="img/microsoft.png" alt="Microsoft" class="brand-logo" />
+      <img src="img/cisco.png" alt="Cisco" class="brand-logo" />
     </div>
   </div>
 </section>
+
 
 
 
