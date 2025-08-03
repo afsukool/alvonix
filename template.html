@@ -1,4 +1,5 @@
-<<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -29,8 +30,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/styles.css" />
-    <!-- Structured Data -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured Data -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -53,56 +55,30 @@
       ]
     }
   </script>
+
   
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm" aria-label="Main navigation">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Alvonix</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#hero">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About Us</a>
-        </li>
-
-        <!-- Services Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Services
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown">
-            <li><a class="dropdown-item" href="/services/managed-it-services.html">Managed IT Services</a></li>
-            <li><a class="dropdown-item" href="/services/it-amc-services.html">IT AMC Services</a></li>
-            <li><a class="dropdown-item" href="/services/business-software-solutions.html">Business Software Solutions</a></li>
-            <li><a class="dropdown-item" href="/services/digital-signage-services.html">Digital Signage Services</a></li>
-            <li><a class="dropdown-item" href="/services/door-access-control.html">Door Access Control & Time Attendance</a></li>
-            <li><a class="dropdown-item" href="/services/it-hardware-solutions.html">Business IT Hardware Solutions</a></li>
-            <li><a class="dropdown-item" href="/services/enterprise-network-wifi.html">Enterprise Network & WiFi Solutions</a></li>
-            <!-- Add more services as needed -->
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#whychooseus">Why Choose Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#testimonials">Testimonials</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Alvonix</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#whychooseus">Why Choose Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-
+  </nav>
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
@@ -114,7 +90,180 @@
     <div id="tsparticles"></div>
   </section>
 
-  <!-- MAIN PAGE CONTENT goes here... e.g. About, Services Grid, etc. -->
+  <!-- About Us -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2>About Alvonix</h2>
+      <p class="lead text-center mx-auto" style="max-width: 700px;">
+        Alvonix is a UAE-based IT solutions provider specializing in cybersecurity, IT infrastructure, and digital consultancy. We help businesses stay secure, connected, and optimized through expert troubleshooting, system administration, and remote support. Our mission is to protect your digital environment while enabling sustainable growth through technology.
+      </p>
+    </div>
+  </section>
+  <!-- Services Section -->
+<section id="services" class="py-5 bg-light services">
+  <div class="container">
+    <h2 class="text-center mb-3">Our Services</h2>
+    <p class="text-center mb-5 text-secondary fst-italic">Delivering expert solutions tailored to your business needs.</p>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow service-card">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="fas fa-network-wired fa-3x text-primary animate__animated animate__fadeInUp"></i>
+            </div>
+            <h5 class="card-title">Network Infrastructure</h5>
+            <p class="card-text">Design, implementation, and management of secure and scalable network solutions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow service-card">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="fas fa-user-shield fa-3x text-primary animate__animated animate__fadeInUp"></i>
+            </div>
+            <h5 class="card-title">Cybersecurity Consulting</h5>
+            <p class="card-text">Protect your business with advanced threat prevention, risk assessment, and compliance services.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow service-card">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="fas fa-tools fa-3x text-primary animate__animated animate__fadeInUp"></i>
+            </div>
+            <h5 class="card-title">IT Support & Troubleshooting</h5>
+            <p class="card-text">Efficient resolution of IT issues, ensuring your systems run smoothly and without interruption.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow service-card">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="fas fa-cloud fa-3x text-primary animate__animated animate__fadeInUp"></i>
+            </div>
+            <h5 class="card-title">Cloud & Server Administration</h5>
+            <p class="card-text">Expert management of cloud infrastructure and servers, including configuration, scaling, and security.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow service-card">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="fas fa-shield-alt fa-3x text-primary animate__animated animate__fadeInUp"></i>
+            </div>
+            <h5 class="card-title">Endpoint Security Solutions</h5>
+            <p class="card-text">Safeguard end-user devices with antivirus, EDR, patching, and access controls.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow service-card">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="fas fa-laptop-code fa-3x text-primary animate__animated animate__fadeInUp"></i>
+            </div>
+            <h5 class="card-title">IT Consultation</h5>
+            <p class="card-text">Guidance on digital transformation, technology investments, and compliance requirements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="services.html" class="btn btn-outline-primary btn-lg">More Services</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Partners Section -->
+  <section id="partners" class="py-3 bg-gray-50 border-bottom overflow-hidden">
+    <div class="container">
+      <div class="logo-marquee" aria-label="Trusted Technologies We Use">
+        <img src="img/aws.png" alt="AWS" class="brand-logo" />
+        <img src="img/microsoft.png" alt="Microsoft" class="brand-logo" />
+        <img src="img/cisco.png" alt="Cisco" class="brand-logo" />
+        <!-- Repeat logos to enable continuous scrolling -->
+        <img src="img/aws.png" alt="AWS" class="brand-logo" />
+        <img src="img/microsoft.png" alt="Microsoft" class="brand-logo" />
+        <img src="img/cisco.png" alt="Cisco" class="brand-logo" />
+      </div>
+      <p class="text-center text-sm text-gray-500 mt-3" style="color:#6b7280; font-size:0.875rem;">
+        All trademarks and logos are the property of their respective owners.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="whychooseus" class="py-5 bg-light">
+    <div class="container">
+      <h2>Why Choose Alvonix?</h2>
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <div class="p-4 border rounded shadow-sm animate__animated animate__fadeInUp">
+            <i class="fas fa-user-shield fa-3x text-primary mb-3"></i>
+            <h5>Experienced Professionals</h5>
+            <p>Skilled team with proven expertise in cybersecurity and IT infrastructure.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 border rounded shadow-sm animate__animated animate__fadeInUp animate__delay-1s">
+            <i class="fas fa-users-cog fa-3x text-success mb-3"></i>
+            <h5>Customer-Centric Approach</h5>
+            <p>We prioritize your business needs to deliver tailored and effective solutions.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 border rounded shadow-sm animate__animated animate__fadeInUp animate__delay-2s">
+            <i class="fas fa-headset fa-3x text-danger mb-3"></i>
+            <h5>24/7 Support & Monitoring</h5>
+            <p>Dedicated support ensuring your systems stay secure and operational around the clock.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" aria-label="Testimonials Carousel">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <blockquote class="blockquote">
+              <p>"Alvonix transformed our network security. Their professionalism and knowledge are unmatched."</p>
+              <footer class="blockquote-footer">Ahmed Al Mansoori</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="blockquote">
+              <p>"Thanks to Alvonix’s expert consultancy, our systems run smoother and safer."</p>
+              <footer class="blockquote-footer">Fatima Al Habsi</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="blockquote">
+              <p>"Reliable support and excellent communication. Highly recommended!"</p>
+              <footer class="blockquote-footer">Mohamed Al Rashed</footer>
+            </blockquote>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
 
   <!-- Contact -->
   <section id="contact" class="py-5">
@@ -234,7 +383,5 @@
       detectRetina: true
     });
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
