@@ -116,19 +116,123 @@
 
   <!-- MAIN PAGE CONTENT goes here... e.g. About, Services Grid, etc. -->
 
-  <!-- Contact Form Section (copy identical across pages) -->
-  <section id="contact" class="py-5 bg-light">
+  <!-- Contact -->
+  <section id="contact" class="py-5">
     <div class="container">
-      <h2 class="text-center">Get in Touch</h2>
-      <!-- form markup as before -->
-      ...
+      <h2 class="text-center mb-4">Get in Touch</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-7 col-lg-6">
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name *</label>
+              <input type="text" class="form-control" id="name" required placeholder="Your full name" />
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email *</label>
+              <input type="email" class="form-control" id="email" required placeholder="your.email@example.com" />
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message *</label>
+              <textarea class="form-control" id="message" rows="5" required placeholder="How can we help you?"></textarea>
+              <div class="invalid-feedback">Please enter your message.</div>
+            </div>
+            <button class="btn btn-primary w-100" type="submit">Send Message</button>
+          </form>
+          <div id="formAlert" class="mt-3 d-none alert alert-success">Your message has been sent successfully!</div>
+        </div>
+      </div>
+
+      <div class="row text-center mt-5">
+        <div class="col-md-4">
+          <h5>Address</h5>
+          <p>Dubai, United Arab Emirates</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Email</h5>
+          <p><a href="mailto:contact@alvonix.com">contact@alvonix.com</a></p>
+        </div>
+        <div class="col-md-4">
+          <h5>Phone</h5>
+          <p>+971 50 123 4567</p>
+        </div>
+      </div>
+
+      <div class="ratio ratio-16x9 mt-4">
+        <iframe src="https://maps.google.com/maps?q=Business%20Bay,%20Dubai&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
+      </div>
     </div>
   </section>
 
-  <!-- Footer (same across pages) -->
-  <footer>...</footer>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2025 Alvonix. All rights reserved.</p>
+          <p><a href="/privacy.html" class="text-light">Privacy Policy</a> | <a href="/terms.html" class="text-light">Terms of Use</a></p>
+        </div>
+        <div class="col-md-6 text-md-start social">
+          <a href="https://wa.me/971555555555" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://facebook.com/alvonix" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://linkedin.com/company/alvonix" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com/alvonix" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  <!-- Scripts -->
-  <script src="..."></script>
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Contact Form Validation -->
+  <script>
+    (() => {
+      const form = document.getElementById('contactForm');
+      const alertBox = document.getElementById('formAlert');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          e.stopPropagation();
+          form.classList.add('was-validated');
+          return;
+        }
+        // Insert actual form submission logic here if needed (e.g., AJAX)
+        alertBox.classList.remove('d-none');
+        form.reset();
+        form.classList.remove('was-validated');
+      });
+    })();
+  </script>
+
+  <!-- tsParticles Background Effect -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: false },
+      background: { color: { value: "#0d1b2a" } },
+      particles: {
+        number: { value: 80, density: { enable: true, area: 800 } },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.4, random: true },
+        size: { value: { min: 1, max: 3 } },
+        move: { enable: true, speed: 1, direction: "none", outMode: "bounce" },
+        links: { enable: true, distance: 120, color: "#ffffff", opacity: 0.3, width: 1 }
+      },
+      interactivity: {
+        events: {
+          onHover: { enable: true, mode: "repulse" },
+          onClick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { quantity: 4 }
+        }
+      },
+      detectRetina: true
+    });
+  </script>
 </body>
 </html>
