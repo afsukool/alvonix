@@ -56,26 +56,53 @@
   
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm" aria-label="Main navigation">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Alvonix</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#whychooseus">Why Choose Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Alvonix</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#hero">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+
+        <!-- Services Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="/services/managed-it-services.html">Managed IT Services</a></li>
+            <li><a class="dropdown-item" href="/services/it-amc-services.html">IT AMC Services</a></li>
+            <li><a class="dropdown-item" href="/services/business-software-solutions.html">Business Software Solutions</a></li>
+            <li><a class="dropdown-item" href="/services/digital-signage-services.html">Digital Signage Services</a></li>
+            <li><a class="dropdown-item" href="/services/door-access-control.html">Door Access Control & Time Attendance</a></li>
+            <li><a class="dropdown-item" href="/services/it-hardware-solutions.html">Business IT Hardware Solutions</a></li>
+            <li><a class="dropdown-item" href="/services/enterprise-network-wifi.html">Enterprise Network & WiFi Solutions</a></li>
+            <!-- Add more services as needed -->
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#whychooseus">Why Choose Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
