@@ -304,32 +304,30 @@ AD Users and Computers → Users → New User
 
 ---
 
-# 🔐 10. Password Policy (GPO)
+# 🔐 10. Password Policy Configuration (Fine-Grained Password Policy – ADAC Method)
 
-## Navigation
+## 🎯 What was done in this step?
 
-```
-Group Policy Management → Default Domain Policy
-```
+A **Fine-Grained Password Policy (FGPP)** was created using the **Active Directory Administrative Center (ADAC)** and applied to a specific service account (`domainjoin`).
 
-## Path
-
-```
-Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Password Policy
-```
+This allows different password rules for specific users instead of applying one global policy.
 
 ---
+
+# 🧭 Path (Correct Navigation)
+
+```text
+Server Manager
+→ Tools
+→ Active Directory Administrative Center
+→ technova.local
+→ System
+→ Password Settings Container
+→ New → Password Settings
 
 ## Applied Settings
 
 SettingValueMin Length1 (Lab)ComplexityDisabled
-
----
-
-## ☁️ Azure Equivalent
-
-- Microsoft Entra Password Protection
-- Conditional Access Policies
 
 ---
 
