@@ -1000,14 +1000,5 @@ Use this to confirm everything was done correctly before moving to Day 2.
 
 ---
 
-> **📌 What's Next (Day 2 Preview)**
-> - Group Policy Objects (GPOs) — creating and linking policies
-> - Shared folders and NTFS/share permissions
-> - DHCP server setup and scope configuration
-> - Roaming profiles and folder redirection
-> - Read-Only Domain Controller (RODC) concepts
-> - Basic AD backup and restore
-
----
 
 *Runbook version: Day 1 | Domain: technova.local | Last updated for Windows Server 2022*
